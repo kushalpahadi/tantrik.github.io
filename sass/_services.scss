@@ -1,0 +1,155 @@
+@import './variables';
+@import './mixins';
+
+
+
+.second-sight{
+        height: 100%;
+        width: 100%;
+        padding: $main-padding;
+        background-color: $primary-bg;
+
+
+        .container{
+          @include items-container(column);
+            padding: 0px 104px;
+
+            h1{
+                color:$bodyfontcolor;
+                font-weight: $font-wg;
+                padding-bottom: 150px;
+
+            }
+
+            p{
+                color:$bodyfontcolor;
+                font-weight: $font-wg-para;
+                color: $para-color;
+            }
+
+            .content{
+                display: flex;
+width: 100%;
+height: 100%;
+padding: 0 45px;
+
+                h1{
+                    padding: 10px 0px;
+                }
+
+
+
+                
+            }
+
+
+            .box{
+                display: flex;
+                flex-direction: column;
+                padding:$box-padding;
+                height: 100%;
+
+
+             
+
+
+                i{
+                    font-size: 35px;
+                    margin: 5px 0px;
+                                    }
+
+                                    .fa-html5{
+                                        color: $iconhtml;
+                                    }
+
+                                    .fa-magnifying-glass{
+                                        color: $iconsearch;
+                                    }
+
+                                    .fa-volume-high{
+                                        color: $iconspeak;
+                                    }
+                
+
+
+                h1{
+                    margin: 1px 0px;
+                    font-size:15px;
+                    font-weight: 400;
+                }
+
+                hr{
+                    height: 0px;
+                    margin: 5px 0px 10px 0px;
+                    width: 10%;
+                    border-radius: 2px;
+                    border:.1px solid #ffffff;
+                }
+
+                .line1{
+
+                    border-color: $iconhtml;
+                }
+
+                .line2{
+
+                    border-color: $iconsearch;
+                }
+
+                .line3{
+
+                    border-color: $iconspeak;
+                }
+
+
+
+
+
+ 
+                }
+
+              
+            }
+        }
+
+
+
+
+        @media (max-width: 1300px){
+            .second-sight {
+                padding:50px 100px 50px 100px;
+
+                .container{
+                    padding: 0px;
+                }
+
+                .h1 h1{
+                    padding-bottom:20px ;
+                }
+                .box{
+                    margin: 30px 0px;
+                }
+
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    
+                }
+}
+}
+
+@media (max-width: 960px){
+    .second-sight {
+        padding:50px 10px 50px 10px;
+
+}
+}
+
+
+@media (max-width: 500px){
+    .second-sight .container .content {
+        padding: 0px;
+    }
+
+}
+

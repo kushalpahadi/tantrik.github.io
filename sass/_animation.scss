@@ -1,0 +1,131 @@
+@import './variables';
+
+
+$x_movement:11px;
+
+ 
+.animation-container{
+    position: absolute;
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+ background: $primary-bg;
+}
+
+.cubes{
+    position: absolute;
+    display: block;
+    
+  
+}
+
+.cube1{
+    animation: floatingballs 5s infinite;
+    position: absolute;
+top: -10%;
+left: 5%;
+    height: 300px;
+    width: 300px;
+    background-color: $cube-color-main;
+    border-radius: 60px;
+
+}
+
+.cube2{
+    animation: floatingballs 6s infinite;
+    position: absolute;
+top: 40%;
+left:10%;
+    height: 90px;
+    width: 90px;
+    background-color: lighten($cube-color-main, 12%);
+    border-radius: 20px;
+}
+
+
+.cube3{
+    animation: floatingballs 5s infinite;
+    position: absolute;
+top: 40%;
+left: 35%;
+    height: 250px;
+    width: 250px;
+    background-color: darken($cube-color-main, 17%);
+    border-radius: 40px;
+}
+
+.cube4{
+    animation: floatingballs 7s infinite;
+    position: absolute;
+bottom: 0%;
+left: -5%;
+    height: 200px;
+    width: 200px;
+    background-color: darken($cube-color-main, 17%);
+    border-radius: 29px;
+}
+
+.cube5{
+    animation: floatingballs 10s infinite;
+    position: absolute;
+top: 75%;
+left:70%;
+    height: 90px;
+    width: 90px;
+    background-color: lighten($cube-color-main, 12%);
+    border-radius: 20px;
+}
+
+.cube6{
+    animation: floatingballs 9s infinite;
+    position: absolute;
+top: -10%;
+right: -10%;
+    height: 400px;
+    width: 400px;
+    background-color: darken($cube-color-main, 10%);
+    border-radius: 60px;
+
+}
+
+.cube7{
+    animation: floatingballs 5s infinite;
+    position: absolute;
+bottom: 1%;
+right: -7%;
+    height: 300px;
+    width: 300px;
+    background-color:  darken($cube-color-main, 17%);
+    border-radius: 60px;
+}
+
+
+@keyframes floatingballs {
+    0%{
+        transform: translateX(-$x_movement);
+    }
+    50%{
+        transform: translateX($x_movement);
+    }
+    100%{
+        transform: translateX(-$x_movement);
+    }
+}
+
+
+
+@media (max-width: 700px){
+    .cube1{opacity: .2;}
+    .cube2{opacity: .6;}
+    .cube3{opacity: .4;}
+    .cube4{opacity: .8;}
+    .cube5{opacity: .2;}
+    .cube6{opacity: .7;}
+    .cube7{opacity: .3;}
+    
+}
+
+
+
+

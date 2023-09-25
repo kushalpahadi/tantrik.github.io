@@ -1,0 +1,55 @@
+@import './variables';
+@import "./mixins";
+
+
+header {
+    @include fixed-nav-bar-container;
+
+
+   
+
+nav{
+    @include nav-space-between(row);
+
+   .image img {
+    height: $img-height;
+   }
+
+
+   ul{
+    display: flex;
+
+   }
+
+   li{
+  @include list-style;
+   }
+
+   a{
+    font-size: $icon-size;
+    color: $bodyfontcolor;
+
+
+    &:hover{
+        @include hover;
+    }
+   }
+}
+}
+
+
+
+@media (max-width:911px){
+    header {
+        @include head-foot-mbl;
+    }
+
+}
+
+
+.sticky{
+    background:$nav-color ;
+    height: 12vh;
+}
+
+

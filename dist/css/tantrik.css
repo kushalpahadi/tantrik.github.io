@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Croissant+One&family=Lora:wght@500&family=Poppins:ital,wght@0,200;0,500;0,600;1,100&family=Roboto&family=Ruwudu:wght@700&family=Sedgwick+Ave+Display&family=Sora:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.animation-container {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  background: rgb(23, 25, 65);
+}
+
+.cubes {
+  position: absolute;
+  display: block;
+}
+
+.cube1 {
+  animation: floatingballs 5s infinite;
+  position: absolute;
+  top: -10%;
+  left: 5%;
+  height: 300px;
+  width: 300px;
+  background-color: rgb(35, 62, 155);
+  border-radius: 60px;
+}
+
+.cube2 {
+  animation: floatingballs 6s infinite;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  height: 90px;
+  width: 90px;
+  background-color: #2e52cd;
+  border-radius: 20px;
+}
+
+.cube3 {
+  animation: floatingballs 5s infinite;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  height: 250px;
+  width: 250px;
+  background-color: #132254;
+  border-radius: 40px;
+}
+
+.cube4 {
+  animation: floatingballs 7s infinite;
+  position: absolute;
+  bottom: 0%;
+  left: -5%;
+  height: 200px;
+  width: 200px;
+  background-color: #132254;
+  border-radius: 29px;
+}
+
+.cube5 {
+  animation: floatingballs 10s infinite;
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  height: 90px;
+  width: 90px;
+  background-color: #2e52cd;
+  border-radius: 20px;
+}
+
+.cube6 {
+  animation: floatingballs 9s infinite;
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  height: 400px;
+  width: 400px;
+  background-color: #1a2d71;
+  border-radius: 60px;
+}
+
+.cube7 {
+  animation: floatingballs 5s infinite;
+  position: absolute;
+  bottom: 1%;
+  right: -7%;
+  height: 300px;
+  width: 300px;
+  background-color: #132254;
+  border-radius: 60px;
+}
+
+@keyframes floatingballs {
+  0% {
+    transform: translateX(-11px);
+  }
+  50% {
+    transform: translateX(11px);
+  }
+  100% {
+    transform: translateX(-11px);
+  }
+}
+@media (max-width: 700px) {
+  .cube1 {
+    opacity: 0.2;
+  }
+  .cube2 {
+    opacity: 0.6;
+  }
+  .cube3 {
+    opacity: 0.4;
+  }
+  .cube4 {
+    opacity: 0.8;
+  }
+  .cube5 {
+    opacity: 0.2;
+  }
+  .cube6 {
+    opacity: 0.7;
+  }
+  .cube7 {
+    opacity: 0.3;
+  }
+}
+header {
+  z-index: 3;
+  position: fixed;
+  height: 13vh;
+  width: 100%;
+  background: transparent;
+  padding: 0px 200px;
+  transition: all 0.3s;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+header nav .image img {
+  height: 80px;
+}
+header nav ul {
+  display: flex;
+}
+header nav li {
+  list-style: none;
+  padding: 10px;
+}
+header nav a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+header nav a:hover {
+  color: black;
+  transition: all 1s ease;
+}
+
+@media (max-width: 911px) {
+  header {
+    padding: 0px 10px;
+  }
+}
+.sticky {
+  background: rgb(29, 140, 248);
+  height: 12vh;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+section .first-sight {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .first-sight h1, section .first-sight p {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+section .first-sight h1 {
+  font-size: 70px;
+  padding-bottom: 20px;
+  line-height: 70px;
+}
+section .first-sight p {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .first-sight p {
+    display: none;
+  }
+}
+.second-sight {
+  height: 100%;
+  width: 100%;
+  padding: 50px 150px 50px 150px;
+  background-color: rgb(23, 25, 65);
+}
+.second-sight .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 104px;
+}
+.second-sight .container h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  padding-bottom: 150px;
+}
+.second-sight .container p {
+  color: rgb(255, 255, 255);
+  font-weight: 200;
+  color: #cccccc;
+}
+.second-sight .container .content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0 45px;
+}
+.second-sight .container .content h1 {
+  padding: 10px 0px;
+}
+.second-sight .container .box {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+  height: 100%;
+}
+.second-sight .container .box i {
+  font-size: 35px;
+  margin: 5px 0px;
+}
+.second-sight .container .box .fa-html5 {
+  color: rgb(202, 70, 181);
+}
+.second-sight .container .box .fa-magnifying-glass {
+  color: rgb(229, 127, 102);
+}
+.second-sight .container .box .fa-volume-high {
+  color: rgb(0, 217, 175);
+}
+.second-sight .container .box h1 {
+  margin: 1px 0px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.second-sight .container .box hr {
+  height: 0px;
+  margin: 5px 0px 10px 0px;
+  width: 10%;
+  border-radius: 2px;
+  border: 0.1px solid #ffffff;
+}
+.second-sight .container .box .line1 {
+  border-color: rgb(202, 70, 181);
+}
+.second-sight .container .box .line2 {
+  border-color: rgb(229, 127, 102);
+}
+.second-sight .container .box .line3 {
+  border-color: rgb(0, 217, 175);
+}
+
+@media (max-width: 1300px) {
+  .second-sight {
+    padding: 50px 100px 50px 100px;
+  }
+  .second-sight .container {
+    padding: 0px;
+  }
+  .second-sight .h1 h1 {
+    padding-bottom: 20px;
+  }
+  .second-sight .box {
+    margin: 30px 0px;
+  }
+  .second-sight .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 960px) {
+  .second-sight {
+    padding: 50px 10px 50px 10px;
+  }
+}
+@media (max-width: 500px) {
+  .second-sight .container .content {
+    padding: 0px;
+  }
+}
+.grandparent {
+  height: 100%;
+  width: 100%;
+  padding: 120px 230px;
+  background: rgb(23, 25, 65);
+  color: rgb(255, 255, 255);
+}
+.grandparent .parent {
+  display: flex;
+  width: 100%;
+}
+.grandparent .parent .contact {
+  display: flex;
+  flex-direction: column;
+}
+.grandparent .parent .contact .title {
+  margin: 0px 0px 30px 0px;
+  font-size: 30px;
+}
+.grandparent .parent .contact .title h3 {
+  font-weight: 400;
+}
+
+@media (max-width: 1300px) {
+  .grandparent {
+    padding: 60px 100px;
+  }
+}
+@media (max-width: 960px) {
+  .grandparent {
+    padding: 60px;
+  }
+  .grandparent .parent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact .title {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .grandparent {
+    padding: 10px 10px;
+  }
+}
+.form-container {
+  padding-top: 20px;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container form .row {
+  display: flex;
+  padding-bottom: 20px;
+}
+.form-container form .row .column {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 0px 0px;
+}
+.form-container form .row .column label {
+  font-weight: 300;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-bottom: 4px;
+}
+
+input {
+  font-weight: 200;
+  padding: 8px 65px 8px 10px;
+  background: transparent;
+  color: rgb(255, 255, 255);
+  outline: none;
+  border: 0.1px solid rgba(128, 128, 128, 0.59);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+input:focus {
+  border-color: rgb(29, 123, 218);
+  background: transparent;
+}
+
+.apple {
+  padding: 8px 315px 8px 10px;
+}
+
+.btnholder {
+  padding-left: 336px;
+}
+
+#send-btn {
+  margin-top: 10px;
+  padding: 10px 40px 10px 40px;
+  font-weight: 400;
+  border-radius: 21px;
+  background: linear-gradient(to top, rgb(195, 82, 234), rgb(214, 80, 215));
+}
+#send-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.499);
+}
+
+.findus {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0px 0px 200px;
+}
+.findus .column2 {
+  padding-top: 100px;
+}
+.findus .column1, .findus .column2 {
+  display: flex;
+  flex-direction: column;
+}
+.findus .title-icon {
+  display: flex;
+  padding-bottom: 10px;
+  align-items: center;
+}
+.findus i {
+  font-size: 30px;
+  padding-right: 10px;
+  color: rgb(202, 70, 181);
+}
+.findus h3 {
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+.findus p {
+  padding-left: 33px;
+  font-weight: 300;
+}
+
+@media (max-width: 960px) {
+  .findus {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .findus .column2 {
+    padding-left: 30px;
+    padding-top: 0px;
+  }
+  .findus .column1 {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .findus {
+    flex-direction: column;
+    padding: 120px 20px 30px 20px;
+  }
+  .findus .column1 {
+    padding-right: 0px;
+    padding-bottom: 30px;
+  }
+  .findus .column2 {
+    padding-left: 0px;
+  }
+  .findus .column1, .findus .column2 {
+    justify-content: center;
+    align-items: center;
+  }
+  .findus .column1 p, .findus .column2 p {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .row {
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .column {
+    padding-bottom: 10px;
+    padding-right: 0px;
+  }
+  .apple {
+    padding: 8px 0px 8px 10px;
+  }
+}
+footer {
+  height: 159px;
+  width: 100%;
+  background: linear-gradient(to top, rgb(41, 45, 97), rgb(23, 25, 65));
+  padding: 0px 200px 0px 200px;
+  border-top: 2px solid rgb(140, 61, 185);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+.footer-container .image img {
+  height: 150px;
+}
+.footer-container ul {
+  display: flex;
+}
+.footer-container li {
+  list-style: none;
+  padding: 5px 9px;
+  border: 1px solid white;
+  border-radius: 57%;
+  margin: 0px 5px;
+}
+.footer-container li:hover {
+  transform: translateY(-1.5px);
+}
+.footer-container a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: all 1s;
+}
+
+@media (max-width: 911px) {
+  footer {
+    padding: 0px 10px;
+  }
+}
+@media (max-width: 500px) {
+  .footer-container .image img {
+    height: 100px;
+  }
+}/*# sourceMappingURL=tantrik.css.map */

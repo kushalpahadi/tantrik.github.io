@@ -1,0 +1,65 @@
+
+//header-navbar-container
+@mixin fixed-nav-bar-container{
+    z-index: 3;
+    position: fixed;
+    height: $nav-height;
+    width: $nav-width;
+    background: transparent;
+padding: $nav-padding;
+transition: all 0.3s;
+}
+
+//flex-navbar-spacebtwn
+@mixin nav-space-between($direction){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: $direction;
+    height: 100%;
+}
+
+//list-style
+@mixin list-style{
+    list-style: none;
+    padding: $list-padding;
+}
+
+
+//hover
+@mixin hover {
+    color: black;
+    transition: all 1s ease;
+}
+
+
+
+//inputgrps
+@mixin input-grp($direction){
+    display: flex;
+                flex-direction: $direction;
+               
+}
+
+
+
+//for aligining items
+@mixin items-container($direction){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin head-foot-mbl{
+    padding: 0px 10px;
+}
+
+// content hover
+
+@mixin content-hover{
+    &:hover {
+        box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    }
+}

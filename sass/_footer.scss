@@ -1,0 +1,85 @@
+
+@import "./mixins";
+@import './variables';
+
+// variable\
+$footer-bg:linear-gradient(to top, rgb(41,45,97), rgb(23,25,65));;
+$footer-height:159px;
+$bordertop:rgb(140,61,185);
+$footer-padding:0px 200px 0px 200px;
+$footer-img: 150px;
+$li-padding:5px 9px;
+
+
+footer{
+    height: $footer-height;
+    width: $nav-width;
+    background: $footer-bg;
+padding: $footer-padding;
+border-top: 2px solid $bordertop;
+
+
+}
+
+
+
+
+.footer-container{
+   @include nav-space-between(row);
+
+   .image img {
+    height: $footer-img;
+   }
+
+
+   ul{
+    display: flex;
+
+   }
+
+   li{
+    list-style: none;
+    padding: $li-padding;
+    border: 1px solid white;
+    border-radius: 57%;
+    margin: 0px 5px;
+
+
+
+    &:hover{
+        transform: translateY(-1.5px);
+    }
+   }
+
+   a{
+    font-size: $icon-size;
+    color: $bodyfontcolor;
+    transition: all 1s;
+
+
+   
+   }
+}
+
+
+//mobile
+
+
+@media (max-width:911px){
+    footer {
+        @include head-foot-mbl;
+    }
+
+}
+
+
+
+@media (max-width: 500px){
+    .footer-container .image img {
+        height: 100px;
+    }
+}
+
+
+
+

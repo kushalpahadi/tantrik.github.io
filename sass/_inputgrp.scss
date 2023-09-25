@@ -1,0 +1,223 @@
+//variables
+
+
+
+.form-container{
+    padding-top: 20px;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .row{
+            display: flex;
+            padding-bottom:20px ;
+
+
+            .column{
+                @include input-grp(column);
+                padding:0px 20px 0px 0px;
+
+                label{
+                    font-weight: 300;
+                    font-size: 12px;
+                    padding-left: 5px;
+                    padding-bottom: 4px;
+                }
+
+              
+            }
+        }
+    }
+}
+
+
+
+
+
+
+input{
+    font-weight: 200;
+    padding:8px 65px 8px 10px;
+    background: transparent;
+    color:$bodyfontcolor;
+    outline: none;
+    border: .1px solid rgba(128, 128, 128, 0.59);
+    border-radius: 10px;
+    transition: all .5s ;
+
+    &:focus{
+        border-color: rgb(29,123,218);
+        background: transparent;
+    }               
+}
+
+
+
+.apple{
+    padding: 8px 315px 8px 10px;
+}
+
+.btnholder{
+    padding-left: 336px;
+}
+
+
+#send-btn{
+    margin-top: 10px;
+    padding: 10px 40px 10px 40px;
+    font-weight: 400;
+    border-radius: 21px;
+    background:linear-gradient(to top,rgb(195,82,234),rgb(214,80,215));
+
+
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.499);
+    }
+}
+
+
+
+
+//mobile
+
+
+
+
+// findus.....ringus
+
+.findus{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px 0px 200px;
+  
+
+    .column2{
+        padding-top: 100px;
+    }
+
+    .column1, .column2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-icon{
+        display: flex;
+       padding-bottom: 10px;
+        align-items: center;
+    }
+
+    i{
+        font-size: 30px;
+        padding-right: 10px;
+        color: $iconhtml;
+    }
+
+    h3{
+        font-weight: 400;
+        color: $bodyfontcolor;
+    }
+
+    p{
+        padding-left: 33px;
+        font-weight: 300;
+    }
+}
+
+
+
+
+
+
+
+//tablet
+@media (max-width: 960px){
+   .findus{
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    .column2{
+        padding-left: 30px;
+        padding-top: 0px;
+       }
+
+       .column1{
+        padding-right: 30px;
+       }
+    
+   }
+
+   
+}
+
+
+//mobile
+@media (max-width: 650px){
+    .findus{
+        flex-direction: column;
+        padding: 120px 20px 30px 20px;
+   
+
+        .column1{
+            padding-right: 0px;
+            padding-bottom: 30px;
+        }
+
+        .column2{
+            padding-left: 0px;
+        }
+
+
+        .column1,.column2{
+            justify-content: center;
+            align-items: center;
+
+
+            
+            
+            p{
+                padding-left: 0px;
+               text-align: center;
+            }
+     
+        }
+    }
+}
+
+
+
+
+//ipnutgrp-mobile
+
+
+@media (max-width: 650px){
+
+    .row{
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 10px;
+
+        
+    }
+
+    .column{
+        padding-bottom: 10px;
+        padding-right: 0px;
+    }
+
+
+
+    .apple{
+        padding: 8px 0px 8px 10px;
+    }
+    
+}
+
+
